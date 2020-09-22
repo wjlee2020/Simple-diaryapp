@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diary App</title>
+    <link href="diary.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="title">My Entry Logs</h1>
+    <form id="entry-form">
+      <!--using textarea instead of input since we want multi-lines-->
+      <textarea
+        class="entry-textbox"
+        placeholder="what did you do today?"
+        required
+      ></textarea>
+      <!-- adding the required attribute in the textarea tag will remind users to enter something into the field-->
+      <br />
+      <!-- br tag to place button below the form-->
+      <button class="button" type="submit">Submit</button>
+    </form>
+    <section id="entries">
+      <div class="entries-nav"></div>
+    </section>
+    <script src="diary.js"></script>
+  </body>
+</html>
